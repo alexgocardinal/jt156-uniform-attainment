@@ -117,10 +117,13 @@ Every four-uniform three-chromatic hypergraph has at least 23 edges.
 \end{proof}
 
 The construction provides an upper bound for \(f(4)\); it does not determine
-its exact value. The finite encoding and verification files are prepared for
-the companion repository at
-\url{https://github.com/alexgocardinal/jt156-uniform-attainment}.
-The repository link becomes active when the files are posted there.
+its exact value. The companion files are at
+\url{https://github.com/alexgocardinal/jt156-uniform-attainment}
+(currently a private repository).
+The finite Lean certificate was checked with Lean 4.35.0; its binary-coloring
+proof uses \texttt{native\_decide}. An independent Python verifier checks all
+\(2^{11}\) binary colorings. The published lower bound \(m(4)=23\) is not
+formalized in the companion Lean file.
 
 \begin{thebibliography}{9}
 \bibitem{JT}
